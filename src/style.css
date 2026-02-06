@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+@theme {
+  --color-text-dark: #333333;
+  --color-brand-pink-light: #F35871;
+  --color-brand-pink-dark: #E03651;
+  --spacing-container: 1440px;
+}
+
+@layer components {
+  .nav-link {
+    @apply font-medium text-[15px] text-text-dark leading-none transition-opacity duration-300 hover:opacity-70;
+  }
+}
+
+.hero-bg {
+    background-image: url('./assets/hero_bg.jpg');
+  }
+
+.chat-bg {
+  background-image: url('./assets/chat-bg.jpg');
+}
+
+.computer-bg {
+  background-image: url('./assets/computer2.svg');
+}
+
+.computer-bg_3 {
+  background-image: url('./assets/computer3.svg');
+}
+
+.computer-bg_4 {
+  background-image: url('./assets/computer4.svg');
+}
+
+.computer-bg_5 {
+  background-image: url('./assets/computer5.jpg');
+}
+
+.chat-bg2 {
+  background-image: url('./assets/chat-bg2.jpg');
+}
