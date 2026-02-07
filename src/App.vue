@@ -327,7 +327,7 @@
             <span class="text-[14px] md:text-[20px] leading-[1.5] tracking-[0.03em]">etc...</span>
           </div>
         </div>
-        <img src="./assets/anunnsu.svg" class="absolute top-[30px] md:top-[-60px] left-[213px] md:left-[750px] z-1" />
+        <img src="./assets/anunnsu.svg" class="absolute top-[30px] md:top-[-60px] right-[0%] md:right-[0px] md:left-[750px] z-1" />
         <button class="mt-[100px] w-[90%] md:w-[70%] ml-[5%] md:ml-[15%] md:mt-[30px] flex justify-center items-center px-[10px] md:px-[15px] py-[5px] md:py-[10px] bg-linear-to-r from-brand-pink-dark to-brand-pink-light transition hover:brightness-110 gap-[10px] z-10">
           <span class="text-[18px] md:text-[20px] font-bold text-white tracking-[0.03em] md:tracking-[0.05em] leading-[1.5]">卒業後に「びるどる」から受注した案件で制作で困った場合</span>
         </button>
@@ -954,7 +954,7 @@
     </section>
 
     <footer class="flex flex-col items-center justify-center py-[30px] gap-[17px] bg-linear-to-r from-brand-pink-dark to-brand-pink-light">
-      <div class="flex items-center justify-center gap-[15px] md:gap-[30px] font-regular text-[11px] text-[14px] leading-none tracking-[0em] text-white">
+      <div class="flex items-center justify-center flex-wrap gap-[15px] md:gap-[30px] font-regular text-[11px] text-[14px] leading-none tracking-[0em] text-white">
         <span >特定商取引法に基づく表示</span>
         <span>運営者情報 </span>
         <span>プライバシーポリシー </span>
