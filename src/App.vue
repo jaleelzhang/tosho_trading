@@ -39,6 +39,7 @@
   ])
 
   const activeIndex = ref(0)
+  const mobileMenuOpen = ref(false)
   const cardWidth = 813 
   const gap = 30 
 
@@ -48,6 +49,14 @@
 
   const next = () => { if (activeIndex.value < lecturers.value.length - 1) activeIndex.value++ }
   const prev = () => { if (activeIndex.value > 0) activeIndex.value-- }
+
+  const toggleMobileMenu = () => {
+    mobileMenuOpen.value = !mobileMenuOpen.value
+  }
+
+  const closeMobileMenu = () => {
+    mobileMenuOpen.value = false
+  }
 </script>
 
 <template>
@@ -73,11 +82,65 @@
             <Icon icon="cuida:caret-right-outline" class="text-white text-[10px] ml-1" />
           </button>
 
-          <button class="md:hidden flex items-center p-1">
-            <Icon icon="line-md:menu" class="text-[28px] text-[#D17E66]" />
+          <button 
+            class="md:hidden flex items-center p-1"
+            @click="toggleMobileMenu"
+          >
+            <Icon 
+              :icon="mobileMenuOpen ? 'line-md:close' : 'line-md:menu'" 
+              class="text-[28px] text-[#D17E66]" 
+            />
           </button>
         </div>
       </nav>
+
+      <!-- 移动端菜单 -->
+      <div 
+        v-if="mobileMenuOpen" 
+        class="md:hidden bg-white/10 backdrop-blur-sm border-t border-gray-200 absolute w-full z-[99]"
+      >
+        <div class="flex flex-col items-end py-4 px-5 space-y-4">
+          <a 
+            href="#" 
+            class="nav-link whitespace-nowrap text-[14px] font-bold w-full py-2 text-right"
+            @click="closeMobileMenu"
+          >
+            選ばれる理由
+          </a>
+          <a 
+            href="#" 
+            class="nav-link whitespace-nowrap text-[14px] font-bold w-full py-2 text-right"
+            @click="closeMobileMenu"
+          >
+            受講者の実績
+          </a>
+          <a 
+            href="#" 
+            class="nav-link whitespace-nowrap text-[14px] font-bold w-full py-2 text-right"
+            @click="closeMobileMenu"
+          >
+            コース・料金
+          </a>
+          <a 
+            href="#" 
+            class="nav-link whitespace-nowrap text-[14px] font-bold w-full py-2 text-right"
+            @click="closeMobileMenu"
+          >
+            受講の流れ
+          </a>
+          <a 
+            href="#" 
+            class="nav-link whitespace-nowrap text-[14px] font-bold w-full py-2 text-right"
+            @click="closeMobileMenu"
+          >
+            よくあるご質問
+          </a>
+          <button class="flex items-center py-[10.68px] px-4 bg-linear-to-r from-brand-pink-dark to-brand-pink-light rounded-[2.05px] transition hover:brightness-110 mt-2">
+            <span class="text-white text-[12px] leading-none font-bold tracking-[0.05em]">無料相談に参加する</span>
+            <Icon icon="cuida:caret-right-outline" class="text-white text-[10px] ml-1" />
+          </button>
+        </div>
+      </div>
     </header>
 
     <section class="md:h-[676px] h-[474px] w-full hero-bg bg-right bg-no-repeat bg-cover flex flex-col md:gap-[15px] gap-[8.14px] relative">
