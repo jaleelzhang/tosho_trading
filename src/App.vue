@@ -81,17 +81,17 @@
     </header>
 
     <section class="md:h-[676px] h-[474px] w-full hero-bg bg-right bg-no-repeat bg-cover flex flex-col md:gap-[15px] gap-[8.14px] relative">
-      <div class="md:py-[10px] py-[5.11px] md:px-[25px] px-[12.77px] ml-[12.27px] md:ml-[89.76px] md:mt-[114px] mt-[30px] bg-[#333333] self-start md:gap-[15.94px] gap-[8.14px] inline-block -skew-x-5">
+      <div class="md:py-[10px] py-[5.11px] md:px-[25px] px-[12.77px] ml-[12.27px] md:ml-[89.76px] md:mt-[114px] mt-[30px] bg-[#333333] self-start md:gap-[15.94px] gap-[8.14px] inline-block -skew-x-5 z-10">
         <span class="md:text-[54px] text-[28px] font-bold tracking-[0.04em] leading-none text-white inline-block">
           完全未経験<span class="traking-[0.06em]">から</span>
         </span>
       </div>
-      <div class="md:py-[5px] py-[5.11px] md:px-[25px] px-[12.77px] ml-[12.27px] md:ml-[89.76px] bg-[#333333] self-start md:gap-[15.94px] gap-[8.14px] inline-block -skew-x-5">
+      <div class="md:py-[5px] py-[5.11px] md:px-[25px] px-[12.77px] ml-[12.27px] md:ml-[89.76px] bg-[#333333] self-start md:gap-[15.94px] gap-[8.14px] inline-block -skew-x-5 z-10">
         <span class="md:text-[54px] text-[28px] font-bold tracking-[0.03em] leading-none text-white inline-block">
           最短2か月で実績を持<span class="traking-[0.08em]">てる</span>
         </span>
       </div>
-      <div class="md:py-[10px] py-[5.11px] md:px-[25px] px-[12.77px] ml-[12.27px] md:ml-[89.76px] bg-linear-to-r from-brand-pink-dark to-brand-pink-light self-start md:gap-[15.94px] gap-[8.14px] inline-block -skew-x-5">
+      <div class="md:py-[10px] py-[5.11px] md:px-[25px] px-[12.77px] ml-[12.27px] md:ml-[89.76px] bg-linear-to-r from-brand-pink-dark to-brand-pink-light self-start md:gap-[15.94px] gap-[8.14px] inline-block -skew-x-5 z-10">
         <span class="md:text-[54px] text-[24px] font-bold leading-none text-white inline-block">プログラミングスクール</span>
       </div>
 
@@ -152,9 +152,9 @@
         </div>
       </div>
 
-      <div class="flex flex-col md:flex-row w-full mt-10 md:mt-[50px] relative items-end md:items-start md:mb-[10px]">
-        <img src="./assets/computer.svg" class="absolute -left-8 top-10 md:top-3 w-[191px] md:w-[583.25px] h-[151px] md:h-[461.36px] rotate-[2deg] z-20 md:relative md:left-0 md:ml-[120px] md:mt-[-40px]" />
-        <div class="w-full md:w-auto flex flex-col md:items-start items-end leading-none tracking-[0.05em] gap-[8px] md:gap-[40px] md:pt-[80px] pt-[20px] pr-[10%] md:pr-[0px] font-bold">
+      <div class="flex flex-col md:flex-row w-full mt-10 md:mt-[50px] relative items-end md:items-end md:justify-center md:mb-[120px]">
+        <img src="./assets/computer.svg" class="absolute -left-8 top-10 md:top-3 w-[191px] md:w-[583.25px] h-[151px] md:h-[461.36px] rotate-[2deg] z-20 md:left-[0] md:mt-[-40px]" />
+        <div class="w-full md:w-auto flex flex-col md:items-start items-end leading-none tracking-[0.05em] gap-[8px] md:gap-[40px] pt-[20px] pr-[10%] md:ml-[30%] font-bold">
           <div class="flex items-baseline">
             <span class="md:text-[48px] text-[30px]">びるどるスクール</span>
             <span class="md:text-[36px] text-[22px]">とは？</span>
@@ -470,7 +470,7 @@
 
       <span class="font-bold text-[30px] md:text-[48px] leading-none tracking-[0.05em]">コース・料金</span>
 
-      <div class="flex flex-col md:flex-row items-start gap-[30px] w-full px-[20px]">
+      <div class="flex flex-col md:flex-row items-start md:itmes-center md:justify-center gap-[30px] w-full px-[20px]">
         <div class="w-full md:w-[385px] shadow-[2px_2px_4px_0px__rgba(0,0,0,0.25)] shadow-[2px_2px_10px_0_rgba(0,0,0,0.1)] bg-white">
           <div class="w-full h-[10px] bg-gradient-to-r from-[#F35871] to-[#E03651]"></div>
           <div class="px-[15px] md:px-[30px] py-[35px] flex flex-col gap-[20px]">

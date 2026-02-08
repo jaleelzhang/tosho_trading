@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
-body {
+html, body {
   font-family: "Noto Sans JP", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 @theme {
